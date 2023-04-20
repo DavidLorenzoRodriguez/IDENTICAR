@@ -1,9 +1,9 @@
 
-/* .content {
-    background-image: url('C:\zSoporte_TI\workspace\IDENTICAR\src\assets/Mitsubishi.jpg');
+ .content {
+    background-image: url('src/assets/Mitsubishi.jpg');
     background-size: cover;
     background-repeat: no-repeat;
-  } */
+  }
 
 /* .content2{
     text-align: left;
@@ -53,7 +53,7 @@
     margin: 0 16px;
   }
 
- 
+
 
   .content {
     display: flex;
@@ -64,7 +64,7 @@
     align-items: center;
   }
 
-  
+
   svg.material-icons {
     height: 24px;
     width: auto;
