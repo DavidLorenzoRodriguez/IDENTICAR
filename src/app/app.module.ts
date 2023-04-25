@@ -3,6 +3,7 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { SharedComponent } from './shared/shared.component';
 
 @NgModule({
 
@@ -11,6 +12,9 @@ import { AppComponent } from './app.component';
     AppRoutingModule
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
+  declarations: [
+    SharedComponent
+  ]
 })
 export class AppModule { }
