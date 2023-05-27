@@ -1,0 +1,14 @@
+<h1>Ejemplos de interpolacion!</h1><br>
+
+<form>
+  <p>Ejemplo de uso el evento click. Se mostrará lo que escribas en el cuadro de texto cuando pulsas el boton.</p>
+  Escribe tu nombre <input type="text" #nombre>
+  <button type="button" (click)="mostrar(nombre.value) ">mostrar</button>
+</form>
+<span><h1>{{nombre.value}}</h1></span>
+<br>
+<form>
+  <p>Eneste ejemplo se usa el evento keyup. Se mostrará lo que escribes en el cuadro de texto segun vas escribiendo.</p>
+  Texto automatico: <input type="text" #auto (keyup)="0">
+</form>
+<span><h1>{{auto.value}}</h1></span>
