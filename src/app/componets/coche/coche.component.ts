@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./coche.component.css']
 })
 export class CocheComponent {
-  titulo="un coche"
+  titulo="Añade un coche a tus favoritos"
 }

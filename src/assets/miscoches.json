@@ -1,0 +1,68 @@
+[{
+    "id":1,
+    "logo":"../../../assets/ford.jpg",
+    "marca":"ford",
+    "modelo": "focus active X",
+    "potencia":"90 CV",
+    "carburante": "Gasolina",
+    "foto":"../../../assets/focus.jpg",
+    "pdf":"../../../assets/ford-focus.pdf"
+  },
+  {
+    "id":2,
+    "logo":"../../../assets/audi.jpg",
+    "marca":"audi",
+    "modelo": "a3 sportback",
+    "foto":"../../../assets/audi-a3.jpg",
+    "pdf":"../../../assets/a3.pdf"
+  },
+  {
+    "id":3,
+    "logo":"../../../assets/bmw.png",
+    "marca":"bmw",
+    "modelo": "m5 competition",
+    "foto":"../../../assets/m5.jpg",
+    "pdf":"../../../assets/2020-bmw-m5-30.pdf"
+  },
+  {
+    "id":4,
+    "logo":"../../../assets/seat.png",
+    "marca":"seat",
+    "modelo": "ibiza",
+    "foto":"../../../assets/ibiza.jpg",
+    "pdf":"../../../assets/IBIZA.pdf"
+    
+  },
+  {
+    "id":5,
+    "logo":"../../../assets/fiat.jpg",
+    "marca":"fiat",
+    "modelo": "tipo-híbrido",
+    "foto":"../../../assets/fiat.png",
+    "pdf":"../../../assets/fiat-tipo.pdf"
+  },
+  {
+    "id":6,
+    "logo": "../../../assets/tesla.jpg",
+    "marca":"tesla",
+    "modelo": "model 3",
+    "foto":"../../../assets/model3.jpg",
+    "pdf":"../../../assets/model3.pdf"
+  },
+  {
+    "id":7,
+    "logo": "../../../assets/toyota.png",
+    "marca":"toyota",
+    "modelo": "gr86",
+    "foto":"../../../assets/gr86.jpg",
+    "pdf":"../../../assets/gr86.pdf"
+ 
+  },
+  {
+    "id":8,
+    "logo": "../../../assets/toyota.png",
+    "marca":"toyota",
+    "modelo": "hilux",
+    "foto":"../../../assets/hilux.png",
+    "pdf":"../../../assets/hilux.pdf"
+  }]

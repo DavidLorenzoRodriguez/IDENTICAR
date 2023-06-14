@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
+import { ToastrService } from 'ngx-toastr';
 import { AuthService } from 'src/app/services/auth.service';
 
 
@@ -10,27 +12,74 @@ import { AuthService } from 'src/app/services/auth.service';
 
 export class FormularioComponent {
 
-  username:string="";
-  password:string="";
-/*
-  constructor(private authService: AuthService){}
+  token:string="";
 
-  onLoginClick(): void {
-    this.authService.login(this.username, this.password).subscribe(
-      authenticated => {
-        if (authenticated) {
-          // Realiza acciones cuando el inicio de sesión es exitoso
-          console.log('Inicio de sesión exitoso');
+  constructor(private auth:AuthService,private router: Router,private toastr: ToastrService){}
+
+  submitForm(user:string,pass:string)  {
+    this.auth.login(user,pass).subscribe(
+      data => {
+        //console.log(data);
+        if (data) {
+          console.log('Usuario autenticado');
+          ////////
+          this.token = this.auth.getAuth();
+          console.log(this.token);
+          this.router.navigate(['/home']);
         } else {
-          // Realiza acciones cuando el inicio de sesión falla
-          console.log('Usuario o contraseña incorrectos');
+          this.toastr.error("Usuario y/o clave incorrecta", 'Failed', {
+            timeOut: 3000, positionClass: 'toast-top-center'
+          });
+          console.log('Autenticación fallida');
+        }
+    });
+  }
+}
+
+
+/*
+    this.auth.login(user,pass).subscribe(
+      (response: any) => {
+
+        if (response.authenticated) {
+          console.log('Usuario autenticado');
+          //this.respuesta="ok";
+        } else {
+          console.log('Autenticación fallida');
+          this.respuesta="ko";
         }
       },
-      error => {
-        // Manejo de errores
-        console.log('Error al realizar el inicio de sesión', error);
+      (error: any) => {
+        console.error('Error en la solicitud:', error);
+        this.respuesta="no se"
+      }
+    );
+*/
+
+
+  /*
+  submitForm(form:NgForm)  {
+    this.print("aceptar");
+
+    const user=form.value.username;
+    const pass=form.value.password;
+
+    this.auth.login(user,pass).subscribe(
+      (response: any) => {
+
+        if (response.authenticated) {
+          console.log('Usuario autenticado');
+          this.respuesta="ok";
+        } else {
+          console.log('Autenticación fallida');
+          this.respuesta="ko";
+        }
+      },
+      (error: any) => {
+        console.error('Error en la solicitud:', error);
+        this.respuesta="no se"
       }
     );
   }
-*/
-}
+  */
+

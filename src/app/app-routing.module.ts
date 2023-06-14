@@ -3,11 +3,27 @@ import { RouterModule, Routes } from '@angular/router';
 import { AppComponent } from './app.component';
 import { FormularioComponent } from './componets/formulario/formulario.component';
 import { HomeComponent } from './componets/home/home.component';
+import { AuthService } from './services/auth.service';
+import { IndexComponent } from './componets/index/index.component';
+import { CochesComponent } from './componets/coches/coches.component';
+import { IdentificarComponent } from './componets/identificar/identificar.component';
+import { FichasComponent } from './componets/fichas/fichas.component';
+import { SearchService } from './services/search.service';
+import { CocheComponent } from './componets/coche/coche.component';
+import { GrupoComponent } from './componets/grupo/grupo.component';
 
 const routes: Routes = [
-  {path: '', component: AppComponent},
+  {path: '', component: IndexComponent},
+  {path: 'index', component: IndexComponent},
   {path: 'formulario', component: FormularioComponent},
   {path: 'home', component: HomeComponent},
+  {path: 'auth', component: AuthService},
+  {path: 'search', component: SearchService},
+  {path: 'coche', component: CocheComponent},
+  {path: 'coches', component: CochesComponent},
+  {path: 'identificar', component: IdentificarComponent},
+  {path: 'fichas', component: FichasComponent},
+  {path: 'grupo', component: GrupoComponent},
   {path: '**', redirectTo: '', pathMatch: 'full'}
 ];
 
