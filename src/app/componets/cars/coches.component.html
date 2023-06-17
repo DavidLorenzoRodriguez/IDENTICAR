@@ -1,0 +1,57 @@
+<div>
+  <app-barra></app-barra>
+</div>
+
+<div class="container-fluid">
+  <div class="row">
+    <nav id="sidebarMenu" class="col-md-3 col-lg-2 d-md-block bg-light sidebar collapse">
+        <div class="position-sticky pt-3">
+          <app-sidebar></app-sidebar>
+        </div>
+    </nav>
+
+    <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4"><div class="chartjs-size-monitor"><div class="chartjs-size-monitor-expand"><div class=""></div></div><div class="chartjs-size-monitor-shrink"><div class=""></div></div></div>
+      <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+        <h1 class="h2">{{titulo}}</h1>
+        <div class="btn-toolbar mb-2 mb-md-0">
+      </div>
+      </div>
+
+      <div class="container">
+        <div class="button-container">
+          <button class="btn btn-outline-success btn-lg" routerLink="/coche">
+            <i class="fa-solid fa-plus fa-beat"></i> Nuevo coche
+          </button>
+        </div><br>
+        <div class="table-container">
+          <table class="table" id="product-list-table">
+            <thead>
+              <tr>
+                <th scope="col">Id</th>
+                <th scope="col"></th>
+                <th scope="col">Marca</th>
+                <th scope="col">Modelo</th>
+                <th scope="col"></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr *ngFor="let coches of coches">
+                <td>{{coches.id}}</td>
+                <td><img src={{coches.logo}} width="100px" height="50px"></td>
+                <td>{{coches.marca}}</td>
+                <td>{{coches.modelo}}</td>
+                <td> <img src={{coches.foto}} width="200px" height="105px"></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+
+
+      </div>
+    </main>
+  </div>
+</div>
+
+
+

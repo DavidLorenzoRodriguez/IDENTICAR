@@ -9,7 +9,7 @@ import { Route, Router } from '@angular/router';
 })
 
 export class AuthService {
-  private usersUrl = '../assets/users.json'; // Ruta del archivo JSON con los usuarios
+  private usersUrl = '../assets/data/users.json'; // Ruta del archivo JSON con los usuarios
   token:string="";
 
   constructor(private http: HttpClient,private router:Router) {
@@ -33,7 +33,7 @@ export class AuthService {
     return this.http.get<any[]>(this.usersUrl).pipe(
       map(users => {
         const user = users.find(u => u.username === username && u.password === password);
-        if(!!user) this.token=user.token;
+        if(!!user) this.token=user.username;
         return !!user; // Devuelve true si el usuario y contraseña coinciden
       })
     );

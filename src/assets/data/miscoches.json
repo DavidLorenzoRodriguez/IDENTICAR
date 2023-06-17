@@ -1,0 +1,82 @@
+[{
+    "id":1,
+    "logo":"../../../assets/img/marcas/ford.jpg",
+    "marca":"ford",
+    "modelo": "focus active X",
+    "potencia":"90 CV",
+    "carburante": "Gasolina",
+    "foto":"../../../assets/img/coches/focus.jpg",
+    "pdf":"../../../assets/datasheets/ford-focus.pdf"
+  },
+  {
+    "id":2,
+    "logo":"../../../assets/img/marcas/audi.jpg",
+    "marca":"audi",
+    "modelo": "a3 sportback",
+    "potencia":"90 CV",
+    "carburante": "Gasolina",
+    "foto":"../../../assets/img/coches/audi-a3.jpg",
+    "pdf":"../../../assets/datasheets/a3.pdf"
+  },
+  {
+    "id":3,
+    "logo":"../../../assets/img/marcas/bmw.png",
+    "marca":"bmw",
+    "modelo": "m5 competition",
+    "potencia":"90 CV",
+    "carburante": "Gasolina",
+    "foto":"../../../assets/img/coches/m5.jpg",
+    "pdf":"../../../assets/datasheets/2020-bmw-m5-30.pdf"
+  },
+  {
+    "id":4,
+    "logo":"../../../assets/img/marcas/seat.png",
+    "marca":"seat",
+    "modelo": "ibiza",
+    "potencia":"90 CV",
+    "carburante": "Gasolina",
+    "foto":"../../../assets/img/coches/ibiza.jpg",
+    "pdf":"../../../assets/datasheets/IBIZA.pdf"
+
+  },
+  {
+    "id":5,
+    "logo":"../../../assets/img/marcas/fiat.jpg",
+    "marca":"fiat",
+    "modelo": "tipo-híbrido",
+    "potencia":"90 CV",
+    "carburante": "Gasolina",
+    "foto":"../../../assets/img/coches/fiat.png",
+    "pdf":"../../../assets/datasheets/fiat-tipo.pdf"
+  },
+  {
+    "id":6,
+    "logo": "../../../assets/img/marcas/tesla.jpg",
+    "marca":"tesla",
+    "modelo": "model 3",
+    "potencia":"90 CV",
+    "carburante": "Gasolina",
+    "foto":"../../../assets/img/coches/model3.jpg",
+    "pdf":"../../../assets/datasheets/model3.pdf"
+  },
+  {
+    "id":7,
+    "logo": "../../../assets/img/marcas/toyota.png",
+    "marca":"toyota",
+    "modelo": "gr86",
+    "potencia":"90 CV",
+    "carburante": "Gasolina",
+    "foto":"../../../assets/img/coches/gr86.jpg",
+    "pdf":"../../../assets/datasheets/gr86.pdf"
+
+  },
+  {
+    "id":8,
+    "logo": "../../../assets/img/marcas/toyota.png",
+    "marca":"toyota",
+    "modelo": "hilux",
+    "potencia":"90 CV",
+    "carburante": "Gasolina",
+    "foto":"../../../assets/img/coches/hilux.png",
+    "pdf":"../../../assets/datasheets/hilux.pdf"
+  }]

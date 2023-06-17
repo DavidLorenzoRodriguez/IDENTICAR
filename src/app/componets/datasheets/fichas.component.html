@@ -1,0 +1,38 @@
+<div>
+  <app-barra></app-barra>
+</div>
+
+<div class="container-fluid">
+  <div class="row">
+    <nav id="sidebarMenu" class="col-md-3 col-lg-2 d-md-block bg-light sidebar collapse">
+        <div class="position-sticky pt-3">
+          <app-sidebar></app-sidebar>
+        </div>
+    </nav>
+
+    <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4">
+      <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+        <h1 class="h2">{{titulo}}</h1>
+        <div class="btn-toolbar mb-2 mb-md-0">
+      </div>
+      </div>
+      <div class="input-group mb-3">
+        <input type="text" #contenido class="form-control" placeholder="modelo de coche" aria-label="Recipient's username" aria-describedby="basic-addon2">
+        <div class="input-group-append">
+          <button class="btn btn-outline-secondary" type="button" (click)="buscar(contenido.value)">Buscar</button>
+        </div>
+      </div>
+      <div *ngIf="coches"   class="" style="border-style:solid; border-color: silver; border-width: 1px;"><br>
+        <ul>{{coches.marca}}</ul>
+        <ul>{{coches.modelo}}</ul>
+        <ul>{{coches.carburante}}</ul>
+        <ul>{{coches.potencia}}</ul>
+        <ul><img src={{coches.foto}}></ul>
+        <ul><a href={{coches.pdf}} class="btn"  download>Descargar Manual  <img src="../../../assets/img/iconos/descargas.png" width="18px" height="18px"></a ></ul>
+      </div>
+    </main>
+  </div>
+</div>
+
+
+

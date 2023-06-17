@@ -1,14 +1,14 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable, map } from 'rxjs';
-import { Modelcoche } from '../componets/modelcoche';
+import { Modelcoche } from '../models/modelcoche';
 
 @Injectable({
   providedIn: 'root'
 })
 export class SearchService {
 
-  private Url = '../assets/miscoches.json';
+  private Url = '../assets/data/miscoches.json';
 
   constructor(private http: HttpClient) {
     /* test */
@@ -27,5 +27,6 @@ export class SearchService {
       })
     );
   }
+
 
 }
